@@ -1,0 +1,246 @@
+.productsdiv {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border: 2px solid black;
+    font-family: "Courier New";
+    font-size: 20px;
+    border-collapse: collapse;
+  }
+  
+  thead {
+    color: white;
+    background-color: #38b3ff;
+  }
+  
+  th select {
+    font-family: "Courier New";
+    font-weight: bolder;
+    background-color: #38b3ff;
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    width: auto;
+  }
+  
+  th select option {
+    background-color: white;
+    color: black;
+    text-align: center;
+  }
+  
+  tbody img {
+    height: auto;
+    max-width: 100%; 
+  }
+  
+  tbody button {
+    margin: 10px;
+    height: 40px;
+    width: 100px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px; 
+    font-weight: bolder;
+    color: white;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #38b3ff;
+  }
+  
+  .searchdiv {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .searchdiv input {
+    width: 80%;
+    max-width: 500px; 
+    height: 40px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid grey;
+    outline: none;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .searchdiv button {
+    height: 40px;
+    width: 100px;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    background-color: #38b3ff;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    margin: 20px 0px;
+  }
+  
+  .pagination button {
+    height: 30px;
+    width: 30px;
+    font-size: 18px;
+    color: white;
+    background-color: #6200ca;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .pagination button:hover {
+    background-color: #38b3ff; 
+  }
+
+  .pagination button.active {
+    background-color: #38b3ff;
+    font-weight: bold; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    table {
+      display: grid;
+      grid-template-columns: auto 1fr; 
+      align-items: start; 
+    }
+  
+    thead {
+      display: block;
+      grid-column: 1; 
+      width: 100%;
+      writing-mode: vertical-rl; 
+      background-color: #38b3ff;
+      color: white;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    tbody {
+      display: block;
+      grid-column: 2; 
+      width: 100%;
+    }
+  
+    tbody tr {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+  
+    tbody img {
+      height: auto;
+      max-width: 100%; 
+    }
+  
+    .pagination {
+        grid-column: 1 / -1;
+        justify-content: center;
+        margin-top: 10px;
+        display: flex; 
+        flex-wrap: wrap; 
+        gap: 5px; 
+      }
+    
+      .pagination button {
+        height: 40px; 
+        width: 40px; 
+        font-size: 16px;
+        color: white;
+        background-color: #6200ca; 
+        border: none;
+        border-radius: 5px; 
+        transition: background-color 0.3s;
+      }
+    
+      .pagination button:hover {
+        background-color: #38b3ff; 
+      }
+    
+      .pagination button.active {
+        background-color: #38b3ff;
+        font-weight: bold; 
+      }
+  }
+  
+  
+  @media (min-width: 769px) and (max-width: 1024px) {
+    table {
+      font-size: 18px;
+    }
+  
+    th select, th {
+      font-size: 18px;
+    }
+  
+    .searchdiv {
+      flex-direction: row;
+    }
+  
+    tbody button {
+      width: 110px;
+      font-size: 16px;
+    }
+  
+    .pagination button {
+      width: 28px;
+      height: 28px;
+      font-size: 18px;
+      transition: background-color 0.3s;
+    }
+    .pagination button:hover {
+        background-color: #38b3ff; 
+      }
+    
+      .pagination button.active {
+        background-color: #38b3ff;
+        font-weight: bold; 
+      }
+  }
+  
+  @media (min-width: 1025px) {
+    table {
+      font-size: 20px;
+    }
+  
+    th select, th {
+      font-size: 20px;
+    }
+  
+    tbody button {
+      width: 120px;
+      font-size: 18px;
+    }
+  
+    .pagination button {
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+    }
+    .pagination button:hover {
+        background-color: #38b3ff; 
+      }
+    
+      .pagination button.active {
+        background-color: #38b3ff;
+        font-weight: bold; 
+      }
+  }
+  
